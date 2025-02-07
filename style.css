@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+/*section left page and his child*/
+.section-cv-left {
+    border: 1px solid red;
+
+    flex: 1;
+
+    min-height: 100vh;
+}
+
+.image-container {
+    border: 1px solid black;
+
+    width: 300px;
+    height: 300px;
+
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.picture {
+    width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.section-info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.info-container {
+    border: 1px solid rgb(247, 116, 9);
+    width: 70%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    text-align: center;
+
+    padding: 20px 0 20px 0;
+}
+h3 {
+    border-bottom: .5px solid black;
+    width: 50%;
+    margin: 0 auto;
+
+    font-size: 22px;
+}
+h4 {
+    width: 50%;
+    margin: 0 auto;
+
+    font-size: 16px;
+}
+
+/* .info-container-child{} */
+
+
+/*section right page and his child*/
+.section-cv-right {
+    border: 1px solid blue;
+
+    flex: 3;
+
+    min-height: 100vh;
+}
+
+.fullname-container {
+    border: 1px solid black;
+
+    width: 100%;
+    height: 200px;
+
+    margin: 0 auto;
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.fullname-container h1 {
+    font-size: 50px;
+}
+.fullname-container h2 {
+    font-size: 35px;
+}
+
+
+.work-experience-container {
+    border: 1px solid red;
+
+    width: 85%;
+
+    margin: 0 auto;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-work-experience {
+    padding: 5px 0 5px 10px;
+}
+header {
+    border: 1px solid rgb(236, 5, 225);
+    /*color*/
+    display: flex;
+    justify-content: left;
+
+}
+header h2 {
+    font-size: 26px;
+}
+
+.work-experience-child-container {
+    border: 1px solid rgb(28, 187, 23);
+}
+.work-experience-child-container header {
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+.work-experience-info-container {
+    line-height: 25px;
+}
+
+
+.additional-skills-container {
+    display: flex;
+    gap: 20px;
+
+    width: 85%;
+    height: 20vh;
+    
+    margin: 0 auto;
+    margin-top: 25px;
+    
+    
+    border: 1px solid rgb(184, 231, 14);
+}
+.additional-skills-container-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+
+
+    border: 1px solid black;
+}
+
+
+
+/*responsive*/
+@media screen and (max-width: 745px) {
+    .fullname-container h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 650px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 305px) {
+    .image-container {
+        border: 1px solid black;
+    
+        width: 100vw;
+        height: 100vw;
+    
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}
+
+/*263 px da gestire*/
