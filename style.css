@@ -2,24 +2,26 @@
     margin: 0;
     box-sizing: border-box;
 
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 main {
     display: flex;
+    
 }
 
 /*section left page and his child*/
 .section-cv-left {
-    border: 1px solid red;
-
     flex: 1;
 
     min-height: 100vh;
+
+    background-color: rgb(28, 52, 68);
+    color: white;
+
 }
 
 .image-container {
-    border: 1px solid black;
 
     width: 300px;
     height: 300px;
@@ -40,11 +42,11 @@ main {
 .section-info-container {
     display: flex;
     flex-direction: column;
+
     flex: 1;
     flex-wrap: wrap;
 }
 .info-container {
-    border: 1px solid rgb(247, 116, 9);
     width: 70%;
 
     margin: 0 auto;
@@ -59,13 +61,13 @@ main {
     padding: 20px 0 20px 0;
 }
 h3 {
-    border-bottom: .5px solid black;
+    border-bottom: .5px solid white;
     width: 50%;
     margin: 0 auto;
 
     font-size: 22px;
 }
-h4 {
+.info-container-child h4 {
     width: 50%;
     margin: 0 auto;
 
@@ -108,7 +110,6 @@ h4 {
 
 
 .work-experience-container {
-    border: 1px solid red;
 
     width: 85%;
 
@@ -117,24 +118,20 @@ h4 {
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 .header-work-experience {
     padding: 5px 0 5px 10px;
 }
-header {
-    border: 1px solid rgb(236, 5, 225);
+.header-work-experience-job {
     /*color*/
     display: flex;
-    justify-content: left;
-
 }
-header h2 {
+.header-work-experience-job h2 {
     font-size: 26px;
 }
 
 .work-experience-child-container {
-    border: 1px solid rgb(28, 187, 23);
 }
 .work-experience-child-container header {
     justify-content: space-between;
@@ -155,22 +152,32 @@ header h2 {
     margin: 0 auto;
     margin-top: 25px;
     
-    
-    border: 1px solid rgb(184, 231, 14);
 }
 .additional-skills-container-child {
     display: flex;
     flex-direction: column;
     flex: 1;
 
-    align-items: center;
+    text-align: left;
+    align-items: left;
     justify-content: center;
 
-    text-align: center;
-
-
-
     border: 1px solid black;
+}
+.additional-skills-container-child #additional-skills-title {
+    width: 50%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.additional-skills-container-child ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 0;
 }
 
 
@@ -189,8 +196,6 @@ header h2 {
 }
 @media screen and (max-width: 305px) {
     .image-container {
-        border: 1px solid black;
-    
         width: 100vw;
         height: 100vw;
     
