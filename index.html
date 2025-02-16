@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -20,10 +21,20 @@
                 <img class="picture" src="img/images.jpeg" alt="">
             </div>
 
-            <div class="section-info-container">
+            <!-- Hidden checkbox to track state -->
+            <input type="checkbox" id="collapsible-toggle">
 
+            <!-- Label styled as a button toggles the checkbox -->
+            <label for="collapsible-toggle" class="toggle-button">
+                <img src="img/csv/arrow_drop_down.svg" alt="">
+            </label>
+
+            <div class="section-info-container">
                 <div class="info-container">
-                    <h3>Contatti</h3>
+                    <header class="header-info-container">
+                        <h3>Contatti</h3>
+                        <div class="border-bottom-header"></div>
+                    </header>
                     <div class="info-container-child">
                         <h4>TELEFONO</h4>
                         <p>+33333333333</p>
@@ -41,7 +52,10 @@
                 </div>
 
                 <div class="info-container">
-                    <h3>Istruzione</h3>
+                    <header class="header-info-container">
+                        <h3>Istruzione</h3>
+                        <span class="border-bottom-header"></span>
+                    </header>
                     <div class="info-container-child">
                         <span>2018-2020</span>
                         <h4>Nome scuola o corso</h4>
@@ -56,7 +70,10 @@
                 </div>
 
                 <div class="info-container">
-                    <h3>Skills</h3>
+                    <header class="header-info-container">
+                        <h3>Skills</h3>
+                        <span class="border-bottom-header"></span>
+                    </header>
 
                     <div class="info-container-child">
                         <span>Leccare il naso con la lingua</span>
@@ -68,7 +85,6 @@
                         <span>Leccare il naso con la lingua</span>
                     </div>
                 </div>
-
             </div>
 
 
